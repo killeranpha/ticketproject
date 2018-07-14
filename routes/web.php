@@ -14,9 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/test', 'HomeController@index')->middleware('auth'); //middleware('auth') : bắt login trước mới cho vào controller
